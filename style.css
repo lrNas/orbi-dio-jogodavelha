@@ -1,0 +1,64 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vmax;
+    width: 90vw;
+    height: 90vh;
+
+}
+.container{
+    border: black solid 1vmin;
+    border-radius: 1vmax;
+    padding: 2vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    }
+
+.hdiv{
+    display:flex;
+    flex-direction:row;
+}
+
+.tile{
+    display: flex;
+    background-color: grey;
+    width: 5vmax;
+    height:5vmax;
+    margin:0.5vmin;
+    border-radius: 1vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+#blocker{
+    display:none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+#modal{
+    background-color: gray;
+    display:flex;
+    flex-direction: column;
+    width: fit-content;
+
+}
+
+.tilehovero:hover{
+    background-color: red;
+}
+.tilehoverx:hover{
+    background-color: blue;
+}
