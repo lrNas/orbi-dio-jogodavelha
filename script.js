@@ -75,7 +75,6 @@ function setTile(num) {
     tiles[num].style.backgroundColor = getColor();
     tiles[num].innerHTML = namePlayer();
     setted++;
-    console.log(setted)
     checkVitoria(atualStatus());
     playerX = !playerX;
     updatePlayer();
@@ -99,4 +98,3 @@ function resetTiles() {
 
 resetTiles();
 newgame.onclick = resetTiles;
-
