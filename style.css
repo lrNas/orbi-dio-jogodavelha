@@ -1,21 +1,22 @@
 body{
     display:flex;
+    flex-direction:column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
     justify-content: center;
     align-items: center;
     text-align:center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2vmax;
-    width: 90vw;
-    height: 90vh;
 
 }
 .container{
+    display: flex;
     border: black solid 1vmin;
     border-radius: 1vmax;
     padding: 2vmax;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     overflow: hidden;
     }
@@ -28,12 +29,13 @@ body{
 .tile{
     display: flex;
     background-color: grey;
-    width: 5vmax;
-    height:5vmax;
+    width: 10vmax;
+    height:10vmax;
     margin:0.5vmin;
     border-radius: 1vmax;
     align-items: center;
     justify-content: center;
+    transition: ease-in 200ms;
 }
 
 #blocker{
@@ -42,6 +44,8 @@ body{
     align-items: center;
     justify-content: center;
     top:0;
+    right:0;
+    padding: 0;
     margin:0;
     width: 100%;
     height: 100%;
@@ -49,10 +53,13 @@ body{
 }
 
 #modal{
-    background-color: gray;
+    background-color: white;
     display:flex;
     flex-direction: column;
     width: fit-content;
+    border: black solid 1vmin;
+border-radius: 0.5vmax;
+padding: 0.5vmax 1vmax 2vmax;
 
 }
 
